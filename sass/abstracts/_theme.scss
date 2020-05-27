@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
 //FONTS
-$font-family-body: 'Libre Franklin', sans-serif;
-$font-size-default: 1.6rem;
+$font-family-headings: 'Poppins', sans-serif;
+$font-family-body: 'Open Sans', sans-serif;
+$font-size-default: 1.8rem;
 
 // PRIMARY COLORS
-$color-primary: hsl(223, 87%, 63%);
-$color-primary-50: hsla(223, 87%, 63%, 0.5);
-$color-secondary: hsl(223, 100%, 88%);
+$color-primary: hsl(322, 100%, 66%);
+$color-secondary: rebeccapurple;
+$color-primary-50: hsla(322, 100%, 66%, 0.5);
 
 // NEUTRAL COLORS
 $color-white: #fff;
 $color-black: #000;
-$color-neutral-gray: hsl(0, 0%, 59%);
-$color-neutral-dark: hsl(209, 33%, 12%);
-$color-neutral-dark-50: hsla(209, 33%, 12%, 0.5);
-$color-neutral-light: hsl(204, 43%, 93%);
+$color-neutral-gray: hsl(208, 11%, 55%);
+$color-neutral-dark: hsl(192, 100%, 9%);
+$color-neutral-dark-50: hsla(192, 100%, 9%, 0.5);
+$color-neutral-light: hsl(193, 100%, 96%);
 
 // FEEDBACK COLORS
 $color-alert: hsl(354, 100%, 66%);
@@ -35,7 +36,12 @@ body {
 	line-height: 1.65;
 }
 
+.heading {
+	font-family: $font-family-headings;
+}
+
 .p {
+	font-family: $font-family-body;
 	font-size: $font-size-default;
 }
 
