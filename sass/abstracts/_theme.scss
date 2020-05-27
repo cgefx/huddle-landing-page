@@ -16,7 +16,7 @@ $color-black: #000;
 $color-neutral-gray: hsl(208, 11%, 55%);
 $color-neutral-dark: hsl(192, 100%, 9%);
 $color-neutral-dark-50: hsla(192, 100%, 9%, 0.5);
-$color-neutral-light: hsl(193, 100%, 96%);
+$color-neutral-light: rgb(235, 251, 255);
 
 // FEEDBACK COLORS
 $color-alert: hsl(354, 100%, 66%);
@@ -31,7 +31,7 @@ $border-radius-sm: 4px;
 
 // TYPOGRAPHY
 body {
-	font-size: $font-size-default;
+	// font-size: $font-size-default;
 	font-family: $font-family-body;
 	line-height: 1.65;
 }
@@ -40,45 +40,37 @@ body {
 	font-family: $font-family-headings;
 }
 
-.p {
-	font-family: $font-family-body;
-	font-size: $font-size-default;
-}
-
+/* 2.4rem(24px) @ 37.5rem(375px) increasing to 4rem(40px) @ 144rem(1440px) */
 .h1 {
-	font-size: 6.4rem;
-	line-height: 1.15;
+	font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.375rem) * 1.5023)), 4rem);
+	/* Where: 1.5023 = 100 * font-size_difference / viewport_width_difference */
 }
 
+/* 1.8rem(18px) @ 37.5rem(375px) increasing to 3.2rem(32px) @ 144rem(1440px) */
 .h2 {
-	font-size: 4.8rem;
+	font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.375rem) * 1.3146)), 3.2rem);
+	/* Where: 1.3146 = 100 * font-size_difference / viewport_width_difference */
 }
 
+/* 2rem(20px) @ 37.5rem(375px) increasing to 2.8rem(28px) @ 144rem(1440px) */
 .h3 {
-	font-size: 2.4rem;
+	font-size: clamp(2rem, calc(2rem + ((1vw - 0.375rem) * 0.7512)), 2.8rem);
+	/* Where: 0.7512 = 100 * font-size_difference / viewport_width_difference */
 }
 
-.h4 {
-	font-size: 3.2rem;
+/* 1.2rem(16px) @ 37.5rem(375px) increasing to 1.8(18px) @ 144rem(1440px) */
+.p {
+	font-size: clamp(1.2rem, calc(1.2rem + ((1vw - 0.375rem) * 0.1878)), 1.8rem);
+	/* Where: 0.1878 = 100 * font-size_difference / viewport_width_difference */
 }
 
-.h5 {
-	font-size: 2.4rem;
-}
-
-.h6 {
-	font-size: 2rem;
-}
-
+/* 1.1rem(11px) @ 37.5rem(375px) increasing to 1.2rem(12px) @ 144rem(1440px) */
 .text-small {
-	font-size: 0.8rem;
+	font-size: clamp(1.1rem, calc(1.1rem + ((1vw - 0.375rem) * 0.0939)), 1.2rem);
+	/* Where: 0.0939 = 100 * font-size_difference / viewport_width_difference */
 }
 
-.text-x-small {
-	font-size: 1rem;
-}
-
-// TYPOGRAPHY - Text styles
+//Text styles
 .text-300 {
 	font-weight: 300;
 }
@@ -157,7 +149,6 @@ body {
 }
 
 // BORDER STYLES
-
 .border-secondary {
 	border: 1px solid $color-secondary;
 }
