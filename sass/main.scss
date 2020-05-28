@@ -6,9 +6,6 @@
 @import './components/button';
 @import './components/layout';
 
-.wrapper {
-}
-
 .header {
 	background-image: url('../images/bg-hero-mobile.svg'),
 		linear-gradient(
@@ -24,34 +21,56 @@
 .navigation {
 	display: flex;
 	align-items: center;
+	max-width: 128rem;
+	margin: 0 auto;
 	justify-content: space-between;
 	padding: 2.4rem 1.6rem;
 	&__logo {
 		max-height: 1.6rem;
-		width: auto;
+
+		// width: auto;
 	}
 }
 
 .hero {
 	border: 1px dashed blue;
 	display: flex;
+	max-width: 128rem;
+	padding: 6.4rem 8rem;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 8.8rem 3.5rem 6rem 3.5rem;
 	margin: 0 auto;
 	text-align: center;
 
+	@include respond(bp900) {
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+	}
+
 	&__image {
-		margin-top: 5.6rem;
+		border: 1px dashed green;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin: 0 auto;
+		max-width: 68.5rem;
 	}
 }
 
 .cta {
+	border: 1px dashed green;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	max-width: 52rem;
+
+	@include respond(bp900) {
+		align-items: flex-start;
+	}
 
 	&__text-container {
 		margin-bottom: 3.2rem;
@@ -69,8 +88,10 @@
 }
 
 .card {
+	border: 1px dashed red;
 	background: $color-white;
 	display: flex;
+	max-width: 124rem;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -79,6 +100,11 @@
 	box-shadow: $box-shadow-dark;
 	border-radius: 8px;
 	margin-bottom: 4rem;
+
+	@include respond(bp900) {
+		flex-direction: row-reverse;
+		text-align: left;
+	}
 
 	&--small {
 		padding: 4rem 4rem;

@@ -556,7 +556,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  height: 100%; }
   .btn--primary {
     min-width: 24rem;
     background: #ff52bf;
@@ -605,29 +606,47 @@ body {
 .navigation {
   display: flex;
   align-items: center;
+  max-width: 128rem;
+  margin: 0 auto;
   justify-content: space-between;
   padding: 2.4rem 1.6rem; }
   .navigation__logo {
-    max-height: 1.6rem;
-    width: auto; }
+    max-height: 1.6rem; }
 
 .hero {
   border: 1px dashed blue;
   display: flex;
+  max-width: 128rem;
+  padding: 6.4rem 8rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8.8rem 3.5rem 6rem 3.5rem;
   margin: 0 auto;
   text-align: center; }
+  @media only screen and (min-width: 56.25em) {
+    .hero {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left; } }
   .hero__image {
-    margin-top: 5.6rem; }
+    border: 1px dashed green;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 68.5rem; }
 
 .cta {
+  border: 1px dashed green;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center;
+  max-width: 52rem; }
+  @media only screen and (min-width: 56.25em) {
+    .cta {
+      align-items: flex-start; } }
   .cta__text-container {
     margin-bottom: 3.2rem; }
     .cta__text-container :first-child {
@@ -639,8 +658,10 @@ body {
   border: 1px dashed blue; }
 
 .card {
+  border: 1px dashed red;
   background: #fff;
   display: flex;
+  max-width: 124rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -649,6 +670,10 @@ body {
   box-shadow: 0px 2px 12px rgba(0, 37, 46, 0.2);
   border-radius: 8px;
   margin-bottom: 4rem; }
+  @media only screen and (min-width: 56.25em) {
+    .card {
+      flex-direction: row-reverse;
+      text-align: left; } }
   .card--small {
     padding: 4rem 4rem; }
   .card--fixed {
