@@ -27,23 +27,24 @@
 						logo"
 					/>
 
-					<button class="btn navigation__button">
+					<button class="btn btn--white heading color-dark">
 						Try It Free
 					</button>
 				</nav>
 				<!-- CTA -->
 				<div class="hero">
-					<div class="hero__cta">
-						<h1 class="hero__cta-heading heading h1 color-dark">
-							Build The Community Your Fans Will Love
-						</h1>
-						<p class="hero__cta-text p color-dark">
-							Huddle re-imagines the way we build communities. You have a voice,
-							but so does your audience. Create connections with your users as
-							you engage in genuine discussion.
-						</p>
-
-						<button class="hero__cta-button btn color-white heading">
+					<div class="cta">
+						<div class="cta__text-container">
+							<h1 class="heading h1 color-dark">
+								Build The Community Your Fans Will Love
+							</h1>
+							<p class="p text-400 color-dark">
+								Huddle re-imagines the way we build communities. You have a
+								voice, but so does your audience. Create connections with your
+								users as you engage in genuine discussion.
+							</p>
+						</div>
+						<button class="btn btn--primary heading color-white">
 							Get Started For Free
 						</button>
 					</div>
@@ -73,7 +74,7 @@
 							<h3 class="card__heading heading h3 color-dark">
 								Grow Together
 							</h3>
-							<p class="card__text p color-gray">
+							<p class="card__text p-small color-gray">
 								Generate meaningful discussions with your audience and build a
 								strong, loyal community. Think of the insightful conversations
 								you miss out on with a feedback form.
@@ -93,7 +94,7 @@
 							<h3 class="card__heading heading h3 color-dark">
 								Flowing Conversations
 							</h3>
-							<p class="card__text p color-gray">
+							<p class="card__text p-small color-gray">
 								You wouldn't paginate a conversation in real life, so why do it
 								online? Our threads have just-in-time loading for a more natural
 								flow.
@@ -114,26 +115,114 @@
 							<h3 class="card__heading heading h3 color-dark">
 								Your Users
 							</h3>
-							<p class="card__text p color-gray">
+							<p class="card__text p-small color-gray">
 								It takes no time at all to integrate Huddle with your app's
 								authentication solution. This means, once signed in to your app,
 								your users can start chatting immediately.
 							</p>
 						</div>
 					</div>
-				</div>
-				<!-- Popup CTA -->
-				<div class="popup-cta">
-					<h2 class="heading color-dark h2">
-						Ready To Build Your Community?
-					</h2>
-					<button class="btn popup-cta__button">
-						Get Started For Free
-					</button>
+					<!-- Card 4 (CTA) -->
+					<div class="card card--small card--fixed">
+						<div class="cta">
+							<h2 class="heading color-dark h2 mb-32">
+								Ready To Build Your Community?
+							</h2>
+
+							<button class="btn btn--primary btn-small heading color-white">
+								Get Started For Free
+							</button>
+						</div>
+					</div>
 				</div>
 			</main>
 			<!-- Footer -->
-			<footer class="footer"></footer>
+			<footer class="footer bg-dark">
+				<div class="footer__container">
+					<div class="footer__section">
+						<img
+							class="footer__logo"
+							src="./images/logo-white.svg"
+							alt="huddle logo"
+						/>
+						<div class="footer__details-row">
+							<img
+								src="./images/icon-location.svg"
+								alt="location icon"
+								class="footer__contact-icon"
+							/>
+							<small class="p-small color-white">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua
+							</small>
+						</div>
+						<div class="footer__details-row">
+							<img
+								src="./images/icon-phone.svg"
+								alt="phone icon"
+								class="footer__contact-icon"
+							/>
+							<small class="p-small color-white">
+								+1-543-123-4567
+							</small>
+						</div>
+						<div class="footer__details-row">
+							<img
+								src="./images/icon-email.svg"
+								alt="email icon"
+								class="footer__contact-icon"
+							/>
+							<small class="p-small color-white">
+								example@huddle.com
+							</small>
+						</div>
+					</div>
+					<div class="footer__section">
+						<a href="#" class="footer__link"
+							><small class="p-small color-white"> About Us</small></a
+						>
+						<a href="#" class="footer__link"
+							><small class="p-small color-white">What We Do</small></a
+						>
+						<a href="#" class="footer__link"
+							><small class="p-small color-white"> FAQ</small></a
+						>
+						<a href="#" class="footer__link"
+							><small class="p-small color-white">Career</small></a
+						>
+						<a href="#" class="footer__link"
+							><small class="p-small color-white">Blog</small></a
+						>
+						<a href="#" class="footer__link"
+							><small class="p-small color-white"> Contact Us</small></a
+						>
+					</div>
+					<div class="footer__section">
+						<div class="footer__social-icons">
+							<div class="footer__social-icon-wrapper">
+								<a class="footer__social-link" href="#">
+									<i class="fab fa-facebook-f footer__social-icon"></i>
+								</a>
+							</div>
+							<div class="footer__social-icon-wrapper">
+								<a class="footer__social-link" href="#">
+									<i class="fab fa-twitter footer__social-icon"></i>
+								</a>
+							</div>
+							<div class="footer__social-icon-wrapper">
+								<a class="footer__social-link" href="#">
+									<i class="fab fa-instagram footer__social-icon"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<small class="text-x-small color-white">
+						&copy; Copyright 2018 Huddle. All rights reserved.</small
+					>
+				</div>
+			</footer>
 		</div>
 		<script src="./js/index.js"></script>
 	</body>
