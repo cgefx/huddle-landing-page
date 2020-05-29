@@ -5,11 +5,20 @@
 	text-decoration: none;
 	height: 100%;
 
+	&:hover {
+		opacity: 0.8;
+		transform: translateY(-2px);
+	}
+	&:active {
+		box-shadow: 0 0.5rem 1rem rgba($color-neutral-dark, 0.15);
+		transform: translateY(0);
+	}
+
 	&--primary {
-		max-width: 28rem;
+		width: 24rem;
 		height: 4rem;
 		background: $color-primary;
-		padding: 1.2rem 4rem;
+		padding: 1.2rem 3rem;
 		border-radius: 50px;
 
 		@include respond(bp900) {
@@ -30,9 +39,10 @@
 }
 
 .btn-small {
-	min-width: 90%;
+	width: 75%;
 
-	@include respond(bp900) {
+	@include respond(bp1200) {
 		height: 8rem;
+		width: 40rem;
 	}
 }

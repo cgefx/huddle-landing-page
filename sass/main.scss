@@ -35,7 +35,6 @@
 }
 
 .hero {
-	border: 1px dashed blue;
 	display: flex;
 	max-width: 128rem;
 	padding: 8.8rem 4rem 3.2rem;
@@ -47,28 +46,26 @@
 		flex-direction: row;
 		justify-content: space-around;
 		text-align: left;
+		padding-bottom: 8rem;
 	}
 
 	&__image {
-		border: 1px dashed green;
-		margin: 5.6rem 0 0;
+		margin: 5.6rem auto 0;
 		max-width: 68.5rem;
 		height: 100%;
 
 		@include respond(bp900) {
-			margin-top: 0;
+			margin: 0 auto 5.6rem;
 		}
 	}
 }
 
 .cta {
-	border: 1px dashed green;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-end;
-	max-width: 52rem;
 
 	@include respond(bp900) {
 		align-items: flex-start;
@@ -77,6 +74,7 @@
 
 	&--small {
 		margin: 0 auto;
+		padding: 1.6rem;
 
 		@include respond(bp900) {
 			justify-content: center;
@@ -86,6 +84,7 @@
 
 	&__text-container {
 		margin-bottom: 3.6rem;
+		max-width: 52rem;
 		padding: 1rem;
 
 		:first-child {
@@ -97,7 +96,6 @@
 .section {
 	position: relative;
 	padding: 6rem 2rem 19rem 2rem;
-	border: 1px dashed blue;
 
 	@include respond(bp900) {
 		padding-left: 6rem;
@@ -111,7 +109,6 @@
 }
 
 .card {
-	border: 1px dashed red;
 	background: $color-white;
 	display: flex;
 	max-width: 124rem;
@@ -125,10 +122,6 @@
 	margin: 0 auto;
 	margin-bottom: 4rem;
 
-	// &:nth-last-of-type(2n) {
-	// 	margin-bottom: 16rem;
-	// }
-
 	@include respond(bp600) {
 		flex-direction: row-reverse;
 		text-align: left;
@@ -136,13 +129,20 @@
 
 	&--fixed {
 		position: absolute;
-		max-height: 28rem;
 		bottom: 0;
-		width: 90%;
 		margin-bottom: 0;
-		max-width: 80rem;
+		height: 18rem;
+		max-height: 28rem;
+
+		width: 90%;
 		left: 50%;
 		transform: translate(-50%, 50%);
+
+		@include respond(bp600) {
+			height: 100%;
+			width: 60%;
+			max-width: 80rem;
+		}
 	}
 
 	&__image-container {
@@ -166,7 +166,6 @@
 
 .footer {
 	&__container {
-		border: 1px dashed orange;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -182,7 +181,6 @@
 	}
 
 	&__section {
-		border: 1px dashed yellow;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -267,12 +265,6 @@
 		&:hover {
 			color: $color-primary;
 		}
-	}
-
-	&__social-icon {
-	}
-
-	&__social-link {
 	}
 
 	&__copyright {
