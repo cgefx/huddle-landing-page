@@ -16,14 +16,9 @@
 
 	&--primary {
 		width: 24rem;
-		height: 4rem;
 		background: $color-primary;
 		padding: 1.2rem 3rem;
 		border-radius: 50px;
-
-		@include respond(bp900) {
-			height: 5rem;
-		}
 	}
 
 	&--white {
@@ -41,8 +36,12 @@
 .btn-small {
 	width: 75%;
 
+	@include respond(bp900) {
+		padding: 2rem 3rem;
+	}
+
 	@include respond(bp1200) {
-		height: 8rem;
+		padding: 3rem 3rem;
 		width: 40rem;
 	}
 }
