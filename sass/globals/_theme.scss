@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+//FONTS
+$font-family-headings: 'Poppins', sans-serif;
+$font-family-body: 'Open Sans', sans-serif;
+$font-size-default: 1.8rem;
+
+// PRIMARY COLORS
+$color-primary: hsl(322, 100%, 66%);
+$color-secondary: rebeccapurple;
+$color-primary-50: hsla(322, 100%, 66%, 0.5);
+
+// NEUTRAL COLORS
+$color-white: #fff;
+$color-black: #000;
+$color-neutral-gray: hsl(208, 11%, 55%);
+$color-neutral-dark: hsl(192, 100%, 9%);
+$color-neutral-dark-20: hsla(192, 100%, 9%, 0.2);
+$color-neutral-light: rgb(235, 251, 255);
+
+// FEEDBACK COLORS
+$color-alert: hsl(354, 100%, 66%);
+
+// SHADOWS
+$box-shadow-dark: 0px 2px 12px $color-neutral-dark-20;
+$box-shadow-primary: 0px 10px 25px 1px $color-primary-50;
+
+// BORDER RADIUS
+$border-radius-24: 24px;
+$border-radius-sm: 4px;
+
+// TYPOGRAPHY - Text Colors
+.color-dark {
+	color: $color-neutral-dark;
+}
+
+.color-white {
+	color: $color-white;
+}
+
+.color-gray {
+	color: $color-neutral-gray;
+}
+
+.color-light {
+	color: $color-neutral-light;
+}
+
+.color-primary {
+	color: $color-primary;
+}
+
+.color-secondary {
+	color: $color-secondary;
+}
+
+.color-alert {
+	color: $color-alert;
+}
+
+// FILL COLORS
+.bg-dark {
+	background-color: $color-neutral-dark;
+}
+
+.bg-white {
+	background-color: $color-white;
+}
+
+.bg-light {
+	background-color: $color-neutral-light;
+}
+
+.bg-primary {
+	background-color: $color-primary;
+}
+
+.bg-primary-50 {
+	background-color: $color-primary-50;
+}
+
+.bg-secondary {
+	background-color: $color-secondary;
+}
+
+// BOX SHADOWS
+.shadow-dark {
+	box-shadow: $box-shadow-dark;
+}
+
+.shadow-primary {
+	box-shadow: $box-shadow-primary;
+}
+
+// BORDER STYLES
+.border-secondary {
+	border: 1px solid $color-secondary;
+}
+
+.border-radius-sm {
+	border-radius: $border-radius-sm;
+}
+
+.border-radius-24 {
+	border-radius: $border-radius-24;
+}
+
+.mb-32 {
+	margin-bottom: 3.2rem;
+}
